@@ -96,3 +96,4 @@ To startup the frontend client run the following command.
 
 Inspiration for the test format taken with ❤️ from [JustEat's recruitment test](https://github.com/justeat/JustEat.RecruitmentTest).
 # rz
+# rz
