@@ -1,0 +1,55 @@
+@import "~bpk-mixins";
+
+.main {
+  display: flex !important;
+  margin: 1rem;
+  width: 400px;
+  border: 1px solid black;
+//   max-width: 450px;
+  max-height: 48vh;
+  flex-direction: column;
+  padding: 1rem;
+  background: white;
+  box-shadow: 0rem 0.1rem 1rem black;
+
+  .bottom {
+    display: flex;
+    justify-content: space-between;
+    max-height: 10vh;
+    align-items: center;
+    button {
+      padding: 0.5rem 2rem;
+      background: #05203c;
+      border-radius: 5px;
+      border: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+  }
+
+  .travelTime {
+    display: flex;
+    justify-content: space-between;
+    max-height: 10vh;
+    // border-bottom: 1rem solid black;
+    .left {
+      display: flex;
+
+      .group {
+        display: flex;
+        justify-content: space-evenly;
+        div {
+          display: flex;
+        }
+      }
+    }
+    .right {
+      display: flex;
+      :nth-child(2) {
+        color: blue;
+      }
+    }
+  }
+
+}
