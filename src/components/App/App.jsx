@@ -1,8 +1,6 @@
 import React from "react";
-import BpkText from "@skyscanner/backpack-web/bpk-component-text";
 
 import Header from "../Header";
-import component from "@skyscanner/backpack-web/bpk-component-text";
 
 import STYLES from "./App.scss";
 
@@ -15,13 +13,9 @@ const App = () => (
   <div style={{ background: "lightGrey" }} className={getClassName("App")}>
     <Header />
     <main className={getClassName("App__main")}>
-      {/* <BpkText tagName="p">here we are</BpkText> */}
       {/* TODO: Add a component to display results here */}
-      {/* {console.log(itineraries)} */}
       {itineraries.map((itinerary) => {
-      
        return <div>
-          {/* {console.log(itinerary,"anything")} */}
           <Details
            price={itinerary.price}
            agent={itinerary.agent}
