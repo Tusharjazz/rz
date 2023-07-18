@@ -4,7 +4,7 @@ import Header from "../Header";
 
 import STYLES from "./App.scss";
 
-import { itineraries, legs } from "./flights.json";
+import { itineraries as i, legs } from "./flights.json";
 import Details from "../Details";
 
 const getClassName = (className) => STYLES[className] || "UNKNOWN";
@@ -14,7 +14,7 @@ const App = () => (
     <Header />
     <main className={getClassName("App__main")}>
       {/* TODO: Add a component to display results here */}
-      {itineraries.map((itinerary) => {
+      {i.map((itinerary) => {
        return <div>
           <Details
            price={itinerary.price}
